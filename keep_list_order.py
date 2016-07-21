@@ -14,3 +14,15 @@ for i in a:
     else:
        new_list.remove(i)
 print (new_list)
+'''注：如果有三个重复元素这种方法就不行了下面看Version1.1.2'''
+a= [1, 2, 1, 3, 2, 5,1]
+ret=[]
+temp=[]
+for x in a:
+    if x not in temp:
+       ret.append(x)
+       temp.append(x)
+    else:
+       if x in ret:
+          ret.remove(x)
+print (ret)
