@@ -42,7 +42,7 @@ def fib4(n):
     return fib4(n-1)+fib4(n-2)
 print (fib4(5))
 
-'''用滑动窗口实现'''
+'''用滑动窗口实现 这么做是把a,b的值向前移动了 节省来回赋值的麻烦'''
 def fib5(n):
     a,b = 1,1
     for i in range(n+1):
