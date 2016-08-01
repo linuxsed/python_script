@@ -41,3 +41,14 @@ def fib4(n):
        return 1
     return fib4(n-1)+fib4(n-2)
 print (fib4(5))
+
+'''用滑动窗口实现'''
+def fib5(n):
+    a,b = 1,1
+    for i in range(n+1):
+        if i == 0 or i == 1:
+           a,b = 1,1
+        else:
+           a,b = b,a+b
+    return b 
+print (fib5(5))
