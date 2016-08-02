@@ -8,7 +8,10 @@ def ramon_to_int(src):
         'D' : 500,
         'M' : 1000
     }
-    
+    #MCMLXXXVII 
+    #IIVXXXLMCM
+    #+1 + 1 + 5 +10 + 10 +10 +50 +1000 -100 +1000
+    #
     roman = src.upper()[::-1]
     prev = 0
     lst = []
